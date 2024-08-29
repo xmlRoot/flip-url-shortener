@@ -1,0 +1,45 @@
+[versions]
+logbackVersion = "1.5.5"
+jacksonVersion = "2.17.0"
+mongockVersion = "5.3.6"
+kotlinVersion = "1.9.22"
+mongobson = "4.11.1"
+kotlinSerialization = "1.7.1"
+faker = "1.6.0"
+mockitoKotlin = "5.4.0"
+testContainer = "1.20.0"
+commonsLang = "3.16.0"
+firebaseAdmin = "9.3.0"
+springDocVersion = "2.6.0"
+servletApiVersion="6.1.0"
+kotestVersion="5.9.1"
+springBomVersion="3.2.2"
+
+[libraries]
+spring-bom = {module="org.springframework.boot:spring-boot-dependencies", version.ref="springBomVersion" }
+mongodb-bson = { module="org.mongodb:bson", version.ref = "mongobson"}
+servlet-api= { module="jakarta.servlet:jakarta.servlet-api", version.ref="servletApiVersion" }
+apache-lang = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang" }
+kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+
+kotest-core = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotestVersion"  }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotestVersion" }
+kotest-property = { module = "io.kotest:kotest-property-jvm", version.ref = "kotestVersion" }
+kotest-datest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotestVersion" }
+
+firebase-admin = { module = "com.google.firebase:firebase-admin", version.ref = "firebaseAdmin" }
+# Jackson
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jacksonVersion" }
+
+# Logging
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logbackVersion" }
+
+# Mongock
+mongock-bom = { module = "io.mongock:mongock-bom", version.ref = "mongockVersion" }
+
+# Spring
+spring-openapi = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springDocVersion" }
+
+# Testing {
+mockito = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+testContainers-bom = { module="org.testcontainers:testcontainers-bom", version.ref = "testContainer" }

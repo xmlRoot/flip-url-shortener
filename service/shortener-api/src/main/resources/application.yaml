@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://flip_admin:mongo_pass_123@localhost:27017/url_shortener?authSource=admin
+mongock:
+  enabled: true
+  migration-scan-package: "com.flip.urlshorterner.migration.changeunit"
+
+
+shortener:
+  url-prefix: http://localhost.shortner.com:8080/s
+springdoc:
+  enable-kotlin: true
+  api-docs:
+    enabled: true
+    path: /docs
